@@ -1,0 +1,22 @@
+server:  # should respect identation
+  port: 8080
+  servlet:
+    context-path: /bootcamp
+
+
+spring:
+    datasource:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/postgres    #localhost local port
+      username: postgres
+      password: 123456
+    jpa:
+      show-sql: true
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      generate-ddl: false   #inibit creation of tables via intelliJ
+      hibernate:
+        ddl-auto: none
+
+application:
+  description: Projeto criado para o bootcamp DIO - Santander
+  version: 1.0
