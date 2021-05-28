@@ -7,13 +7,13 @@ server:  # should respect identation
 spring:
     datasource:
       driver-class-name: org.postgresql.Driver
-      url: jdbc:postgresql://localhost:5432/postgres    #localhost local port
-      username: postgres
-      password: 123456
+      url: postgres://dnxyvfklcumhsv:0572f7589a11225430e4915daf0b602bb625bdebeb5660c09d1c96aa52ac0a20@ec2-54-90-55-211.compute-1.amazonaws.com:5432/dco7fuh8o2ku0l
+      username: dnxyvfklcumhsv
+      password: 0572f7589a11225430e4915daf0b602bb625bdebeb5660c09d1c96aa52ac0a20
     jpa:
       show-sql: true
       database-platform: org.hibernate.dialect.PostgreSQLDialect
-      generate-ddl: false   #inibit creation of tables via intelliJ
+      generate-ddl: true
       hibernate:
         ddl-auto: none
 
